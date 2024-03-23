@@ -7,6 +7,9 @@ const reducer = (state, action) => {
             return { ...state, columns: [...state.columns, { ...action.payload}]};
         case 'ADD_CARD':
             return { ...state, cards: [...state.cards, { ...action.payload}]};
+        case 'UPDATE_SEARCHSTRING':
+            console.log('aaaaaaaaaaaa', ...state.searchString)
+            return { ...state, searchString: action.payload };
         default:
             return state;
     }
@@ -17,5 +20,6 @@ const store = createStore(
     initialState,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
+
 
 export default store;
