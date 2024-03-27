@@ -1,0 +1,30 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+.navbar {
+background: darken($color-dark, 3%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+  color: $color-light;
+
+  & ul {
+    list-style: none;
+  }
+  & li {
+    display: inline-block;
+    margin-left: 20px;
+    }
+
+  & a {
+    text-decoration: none;
+    color: $color-light;
+  }
+}
+
+.icon {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
