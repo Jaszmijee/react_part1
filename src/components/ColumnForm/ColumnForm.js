@@ -16,7 +16,6 @@ const ColumnForm = props => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log('props.listId', props.listId)
         dispatch(addColumn({ id: shortid(), title, icon, listId: props.listId }));
         setTitle('');
         setIcon('');
