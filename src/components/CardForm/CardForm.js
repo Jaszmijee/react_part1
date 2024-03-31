@@ -14,6 +14,7 @@ const CardForm = props => {
 
     const handleSubmit = e => {
         e.preventDefault();
+        console.log('props.columnId', props.columnId)
         dispatch(addCard({ id: shortid(), title, columnId: props.columnId }));
         setTitle('');
     };
