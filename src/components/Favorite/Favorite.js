@@ -2,8 +2,8 @@ import Container from "../Container/Container";
 import PageTitle from "../PageTitle/PageTitle";
 import Card from "../Card/Card";
 import {useSelector} from "react-redux";
-import {getFavoriteCards} from "../../redux/store";
 import styles from "./Favorite.module.scss";
+import {getFavoriteCards} from "../../redux/cardsRedux";
 
 const Favorite = () => {
 
